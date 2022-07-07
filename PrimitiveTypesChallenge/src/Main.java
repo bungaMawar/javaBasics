@@ -3,8 +3,8 @@ public class Main {
         byte byteVal = 100;
         short shortVal = 30000;
         int intVal = 2000000;
-        long LongVal = 50000 + (10 * (byteVal + shortVal + intVal));
+        long longVal = 50000L + (10 * (byteVal + shortVal + intVal));
 
-        System.out.println(LongVal);
+        System.out.println(longVal);
     }
 }
