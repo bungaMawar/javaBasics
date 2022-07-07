@@ -1,10 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        byte challByteVal = 100;
-        short challShortVal = 30000;
-        int challIntVal = 2000000;
-        long challLongVal = 50000 + (10 * (challByteVal + challShortVal + challIntVal));
+        byte byteVal = 100;
+        short shortVal = 30000;
+        int intVal = 2000000;
+        long LongVal = 50000 + (10 * (byteVal + shortVal + intVal));
 
-        System.out.println(challLongVal);
+        System.out.println(LongVal);
     }
 }
