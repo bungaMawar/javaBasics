@@ -6,5 +6,7 @@ public class Main {
         long longVal = 50000L + (10 * (byteVal + shortVal + intVal));
 
         System.out.println(longVal);
+
+        short shortTotal = (short) (100 + 10 * (byteVal + shortVal + intVal));
     }
 }
