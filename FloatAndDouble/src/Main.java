@@ -11,9 +11,13 @@ public class Main {
         System.out.println("Minimum double value is " + minDoubleVal);
         System.out.println("Maximum double value is " + maxDoubleVal);
 
-        int intVal = 5;
-        float floatVal = 5.25f; //most common format
+        int intVal = 5 / 3 ;
+        float floatVal = 5f / 3f; //most common format
         float secondFloatVal = (float) 5.25;
-        double doubleVal = 5.25;
+        double doubleVal = 5.00 / 3.00;
+
+        System.out.println("Integer: " + intVal);
+        System.out.println("Float: " + floatVal);
+        System.out.println("Double: " + doubleVal);
     }
 }
