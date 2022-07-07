@@ -22,5 +22,8 @@ public class Main {
 
         double pi = 3.1415927d;
         double number = 3_000_000.4_235_235d;
+
+        System.out.println(pi);
+        System.out.println(number);
     }
 }
