@@ -28,5 +28,9 @@ public class Main {
         System.out.println("Maximum value of long is " + maxLongVal);
         long longLiteralVal = 2_147_483_649L;
         System.out.println(longLiteralVal);
+
+        int total = (minIntVal/2);
+        byte newByteVal = (byte)(minByteVal/2);
+        short newShortVal = (short)(minShortVal/2);
     }
 }
