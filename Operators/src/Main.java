@@ -39,7 +39,16 @@ public class Main {
         boolean isAlien = false;
         if (isAlien == false) {
             System.out.println("It's not an alien.");
+        }
 
+        int topScore = 80;
+        if (topScore != 100){
+            System.out.println("You have the top score!");
+        }
+
+        int secondTopScore = 60;
+        if(topScore > secondTopScore && topScore < 100){
+            System.out.println("Greater than second top score and less than 100/");
         }
     }
 }
