@@ -6,18 +6,7 @@ public class Main {
 
         double remainder = firstExpression % 40.00;
 
-        boolean isZero = false;
-        if(remainder == 0){
-            isZero = true;
-        }
-        else{
-            isZero = false;
-        }
-
-        System.out.println(isZero);
-
-        if(!isZero){
-            System.out.println("Got some remainder");
-        }
+        boolean isZero = remainder == 0 ? true : false;
+        System.out.println("The expression has no remainder: " + isZero);
     }
 }
