@@ -10,7 +10,5 @@ public class Main {
                 "statement.");
 
         int anotherVariable = 50; variable++; //this is two statements
-
-        
     }
 }
