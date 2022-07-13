@@ -19,17 +19,20 @@ public class Main {
         return name + " managed to get into position " + highScorePosition + " on the high score table.";
     }
     public static int calculateHighScorePosition(int score){
+        int position = 4;
         if(score >= 1000){
-            return 1;
+            //return 1;
+            position = 1;
         }
         else if(score >= 500){
-            return 2;
+            //return 2;
+            position = 2;
         }
-        else if(score >= 100){
-            return 3;
+        else if(score >= 100) {
+            //return 3;
+            position = 3;
         }
-        else {
-            return 4;
-        }
+            //return 4;
+        return position;
     }
 }
