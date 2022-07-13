@@ -11,18 +11,21 @@ public class Main {
 
         score = calculateHighScorePosition(50);
         System.out.println(displayHighScorePosition("Nick", score));
+
+        score = calculateHighScorePosition(1000);
+        System.out.println(displayHighScorePosition("Sam", score));
     }
     public static String displayHighScorePosition(String name, int highScorePosition){
         return name + " managed to get into position " + highScorePosition + " on the high score table.";
     }
     public static int calculateHighScorePosition(int score){
-        if(score > 1000){
+        if(score >= 1000){
             return 1;
         }
-        else if(score > 500 && score < 1000){
+        else if(score >= 500){
             return 2;
         }
-        else if(score > 100 && score < 500){
+        else if(score >= 100){
             return 3;
         }
         else {
