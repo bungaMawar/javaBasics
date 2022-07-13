@@ -12,8 +12,8 @@ public class Main {
         score = calculateHighScorePosition(50);
         System.out.println(displayHighScorePosition("Nick", score));
     }
-    public static String displayHighScorePosition(String name, int highScorPosition){
-        return name + " managed to get into position " + highScorPosition + " on the high score table.";
+    public static String displayHighScorePosition(String name, int highScorePosition){
+        return name + " managed to get into position " + highScorePosition + " on the high score table.";
     }
     public static int calculateHighScorePosition(int score){
         if(score > 1000){
