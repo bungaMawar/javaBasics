@@ -9,4 +9,11 @@ public class Main {
         }
         return false;
     }
+
+    public static boolean isTeen(int age){
+        if(age >= 13 && age <= 19){
+            return true;
+        }
+        return false;
+    }
 }
