@@ -28,8 +28,6 @@ public class Main {
         placeholder = (int) (secondNumber * scale);
         secondNumber = placeholder/scale;
 
-        System.out.println("firstNumber: " + firstNumber + "\nsecondNumber: " + secondNumber);
-
         if(firstNumber == secondNumber){
             return true;
         }
