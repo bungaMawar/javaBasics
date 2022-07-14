@@ -11,15 +11,21 @@ public class Main {
         System.out.println(firstNumber + " and " + secondNumber +
                 " are equal up to three decimal places: " +
                 areEqualByThreeDecimalPlaces(firstNumber, secondNumber));
+
+        firstNumber = 3.176;
+        secondNumber = 3.175;
+        System.out.println(firstNumber + " and " + secondNumber +
+                " are equal up to three decimal places: " +
+                areEqualByThreeDecimalPlaces(firstNumber, secondNumber));
+
     }
 
     public static boolean areEqualByThreeDecimalPlaces(double firstNumber, double secondNumber){
-        if(firstNumber == 0d && secondNumber == 0d){
-            return true;
-        }
-        double scale = Math.pow(firstNumber, 3);
+        double scale = Math.pow(10, 3);
         firstNumber = Math.round(firstNumber * scale)/scale;
         secondNumber = Math.round(secondNumber * scale)/scale;
+
+        System.out.println("firstNumber: " + firstNumber + "\nsecondNumber: " + secondNumber);
 
         if(firstNumber == secondNumber){
             return true;
