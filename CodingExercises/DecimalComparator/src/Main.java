@@ -22,9 +22,14 @@ public class Main {
 
     public static boolean areEqualByThreeDecimalPlaces(double firstNumber, double secondNumber){
         double scale = Math.pow(10, 3);
-        firstNumber = Math.round(firstNumber * scale)/scale;
-        secondNumber = Math.round(secondNumber * scale)/scale;
-        
+        int placeholder = 0;
+        placeholder = (int) (firstNumber * scale);
+        firstNumber = placeholder/scale;
+        placeholder = (int) (secondNumber * scale);
+        secondNumber = placeholder/scale;
+
+        System.out.println("firstNumber: " + firstNumber + "\nsecondNumber: " + secondNumber);
+
         if(firstNumber == secondNumber){
             return true;
         }
