@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        printConversion(17.21);
     }
 
     public static long toMilesPerHour(double kilometersPerHour){
@@ -13,6 +13,11 @@ public class Main {
 
     public static void printConversion(double kilometersPerHour){
         long milesPerHour = toMilesPerHour(kilometersPerHour);
-        System.out.println(kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
+        if(milesPerHour == -1){
+            System.out.println("Invalid Value");
+        }
+        else{
+            System.out.println(kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
+        }
     }
 }
