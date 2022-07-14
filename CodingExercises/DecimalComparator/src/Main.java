@@ -24,9 +24,7 @@ public class Main {
         double scale = Math.pow(10, 3);
         firstNumber = Math.round(firstNumber * scale)/scale;
         secondNumber = Math.round(secondNumber * scale)/scale;
-
-        System.out.println("firstNumber: " + firstNumber + "\nsecondNumber: " + secondNumber);
-
+        
         if(firstNumber == secondNumber){
             return true;
         }
