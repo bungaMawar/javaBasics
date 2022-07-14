@@ -10,4 +10,9 @@ public class Main {
         }
         return milesPerHour;
     }
+
+    public static void printConversion(double kilometersPerHour){
+        long milesPerHour = toMilesPerHour(kilometersPerHour);
+        System.out.println(kilometersPerHour + " km/h = " + milesPerHour + " mi/h");
+    }
 }
