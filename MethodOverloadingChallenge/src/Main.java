@@ -23,6 +23,8 @@ public class Main {
         if(inches < 0){
             return -1;
         }
-        return inches * 2.54;
+        double feet = inches/12;
+        inches = inches - (feet * 12);
+        return calcFeetAndInchesToCentimeters(feet, inches);
     }
 }
