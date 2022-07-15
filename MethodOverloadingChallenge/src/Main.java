@@ -1,6 +1,8 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("5ft 3in = " + calcFeetAndInchesToCentimeters(5d,3d) + " cm");
+        System.out.println("75 in = " + calcFeetAndInchesToCentimeters(75d) + " cm");
+
     }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches){
@@ -15,5 +17,12 @@ public class Main {
         centimeters = inches * 2.54;
 
         return centimeters;
+    }
+
+    public static double calcFeetAndInchesToCentimeters(double inches){
+        if(inches < 0){
+            return -1;
+        }
+        return inches * 2.54;
     }
 }
