@@ -1,4 +1,7 @@
 package com.shafiya.java;
+
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         int value = 1;
@@ -38,5 +41,21 @@ public class Main {
             default:
                 System.out.println(switchChar + " not found");
         }
+
+        String switchMonth = "October";
+        switch(switchMonth){
+            case "January":
+                System.out.println("Jan");
+                break;
+            case "February":
+                System.out.println("Feb");
+                break;
+            case "October":
+                System.out.println("Oct");
+                break;
+            default:
+                System.out.println(switchMonth);
+        }
+
     }
 }
