@@ -28,5 +28,15 @@ public class Main {
                 System.out.println("Value was neither one, two, three, four, nor five");
                 break;
         }
+
+        char switchChar = 'A';
+
+        switch(switchChar){
+            case 'A': case 'B': case 'C': case 'D': case 'E':
+                System.out.println("Found " + switchChar);
+                break;
+            default:
+                System.out.println(switchChar + " not found");
+        }
     }
 }
