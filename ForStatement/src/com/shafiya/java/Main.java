@@ -15,7 +15,8 @@ public class Main {
         for(int x = 0; x < 10; x++){
             if(isPrime(x)){
                 numberOfPrimes++;
-                System.out.println("Prime Number: " + x + "\nNumber of primes: " + numberOfPrimes);
+                System.out.println("Prime Number: " + x +
+                        "\nNumber of primes: " + numberOfPrimes);
                 if (numberOfPrimes == 3){
                     break;
                 }
