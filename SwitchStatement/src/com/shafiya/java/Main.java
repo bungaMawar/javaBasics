@@ -1,6 +1,7 @@
 package com.shafiya.java;
 
 import java.sql.SQLOutput;
+import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,14 +44,14 @@ public class Main {
         }
 
         String switchMonth = "October";
-        switch(switchMonth){
-            case "January":
+        switch(switchMonth.toLowerCase()){
+            case "january":
                 System.out.println("Jan");
                 break;
-            case "February":
+            case "february":
                 System.out.println("Feb");
                 break;
-            case "October":
+            case "october":
                 System.out.println("Oct");
                 break;
             default:
