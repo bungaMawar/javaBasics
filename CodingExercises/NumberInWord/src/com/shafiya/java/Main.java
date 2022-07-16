@@ -1,7 +1,10 @@
 package com.shafiya.java;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        printNumberInWord(0);
+        printNumberInWord(1);
+        printNumberInWord(3);
+        printNumberInWord(-4);
     }
 
     public static void printNumberInWord(int number){
