@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println("----------");
         int numberOfPrimes = 0;
-        for(int x = 0; x < 10; x++){
+        for(int x = 10; x < 50; x++){
             if(isPrime(x)){
                 numberOfPrimes++;
                 System.out.println("Prime Number: " + x +
