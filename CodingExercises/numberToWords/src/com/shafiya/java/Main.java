@@ -33,40 +33,40 @@ public class Main {
                 count++;
                 switch (remainder){
                     case 1:
-                        System.out.println("ONE");
+                        System.out.println("One");
                         break;
                     case 2:
-                        System.out.println("TWO");
+                        System.out.println("Two");
                         break;
                     case 3:
-                        System.out.println("THREE");
+                        System.out.println("Three");
                         break;
                     case 4:
-                        System.out.println("FOUR");
+                        System.out.println("Four");
                         break;
                     case 5:
-                        System.out.println("FIVE");
+                        System.out.println("Five");
                         break;
                     case 6:
-                        System.out.println("SIX");
+                        System.out.println("Six");
                         break;
                     case 7:
-                        System.out.println("SEVEN");
+                        System.out.println("Seven");
                         break;
                     case 8:
-                        System.out.println("EIGHT");
+                        System.out.println("Eight");
                         break;
                     case 9:
-                        System.out.println("NINE");
+                        System.out.println("Nine");
                         break;
                     case 0:
-                        System.out.println("ZERO");
+                        System.out.println("Zero");
                         break;
                 }
             }
             if (count != originalCount){
                 for(int x = 0; x < originalCount - count; x++){
-                    System.out.println("ZERO");
+                    System.out.println("Zero");
                 }
             }
         }
