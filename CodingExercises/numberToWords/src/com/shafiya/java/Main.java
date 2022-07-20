@@ -73,10 +73,18 @@ public class Main {
     }
 
     public static int reverse(int number){
+        int negative = 0;
+        if(number < 0){
+            negative = Math.abs(number);
+            number = Math.abs(number);
+        }
         int returnNumber = 0;
         while(number > 0){
             returnNumber = (returnNumber * 10) + (number % 10);
             number = number/10;
+        }
+        if(negative != 0){
+            returnNumber = -returnNumber;
         }
         return returnNumber;
     }
