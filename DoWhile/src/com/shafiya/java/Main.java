@@ -25,6 +25,7 @@ public class Main {
 
         int number = 4;
         int endNumber = 20;
+        count = 0;
         while(number <= endNumber){
             number++;
             if(!isEvenNumber(number)){
@@ -33,7 +34,12 @@ public class Main {
                 //just bypasses everything after this and
                 //goes back to beginning
             }
+            if(count == 5){
+                break;
+            }
             System.out.println("Even number: " + number);
+            count++;
+            System.out.println("Number of even numbers: " + count);
         }
     }
     public static boolean isEvenNumber(int number){
