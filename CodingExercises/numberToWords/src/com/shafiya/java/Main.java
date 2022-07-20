@@ -21,7 +21,7 @@ public class Main {
     }
     public static void numberToWords(int number){
         if(number < 0){
-            System.out.println("Invalid Number");
+            System.out.println("Invalid Value");
         }
         else{
             int originalCount = getDigitCount(number);
