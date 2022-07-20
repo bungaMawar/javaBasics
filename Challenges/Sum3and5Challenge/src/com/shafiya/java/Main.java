@@ -14,7 +14,7 @@ public class Main {
 //                Note: Type all code in main method
         int count = 0;
         int sum = 0;
-        for (int x = 0; x <= 1000; x++){
+        for (int x = 1; x <= 1000; x++){
             if(x % 3 == 0 && x % 5 == 0){
                 count++;
                 sum += x;
