@@ -11,6 +11,8 @@ public class Main {
 //        Add some code to the main method to test out the sumDigits method to determine that it is
 //        working correctly for valid and invalid values passed as arguments.
         System.out.println("Sum number: " + sumDigits(125));
+        System.out.println("Sum number: " + sumDigits(-4));
+        System.out.println("Sum number: " + sumDigits(4));
     }
     public static int sumDigits(int number){
         if(number < 10){
