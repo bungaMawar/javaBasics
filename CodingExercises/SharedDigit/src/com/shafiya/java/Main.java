@@ -8,24 +8,26 @@ public class Main {
 //        such as 2 in 12 and 23; otherwise, the method should return false.
         System.out.println(hasSharedDigit(12, 23));
         System.out.println(hasSharedDigit(17, 25));
+        System.out.println(hasSharedDigit(12, 13));
+        System.out.println(hasSharedDigit(12, 32));
 
     }
     public static boolean hasSharedDigit(int first, int second){
         if(first < 10 || first > 99 || second < 10 || second > 99){
             return false;
         }
-        int numberOne = 0;
-        int numberTwo = 0;
+        int tempSecond = second;
         while(first > 0){
-            numberOne = first % 10;
-            while(second > 0) {
-                numberTwo = second % 10;
+            int numberOne = first % 10;
+            first = first/10;
+            tempSecond = second;
+            while(tempSecond > 0) {
+                int numberTwo = tempSecond % 10;
+                tempSecond = tempSecond/10;
                 if (numberOne == numberTwo) {
                     return true;
                 }
-                second = second / 10;
             }
-            first = first/10;
         }
         return false;
     }
