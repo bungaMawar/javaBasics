@@ -6,21 +6,15 @@ public class Main {
 //        The method should calculate the largest prime factor of a given number and return it.
         System.out.println(getLargestPrime(21));
         System.out.println(getLargestPrime(7));
-        System.out.println(isPrime(7));
-        System.out.println(isPrime(24));
     }
     public static int getLargestPrime(int number){
         if(number < 0){
             return -1;
         }
         int prime = -1;
-        for(int x = 2; x < number; x++){
-            if(number % x == 0){
-                for(int i = 1; i < number/x; i++){
-                    if(!((number/x) % i == 0) && number/x > prime){
-                        prime = number/x;
-                    }
-                }
+        for(int x = 1; x < number; x++) {
+            if (isPrime(number/x) && prime < number/x){
+                prime = number/x;
             }
         }
         return prime;
