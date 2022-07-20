@@ -18,7 +18,7 @@ public class Main {
         if(number <= 0){
             return false;
         }
-        return number % 2 == 0;
+        return (number % 2 != 0);
     }
 
     public static int sumOdd(int start, int end){
