@@ -93,10 +93,10 @@ public class Main {
             return -1;
         }
         int count = 0;
-        while(number > 0){
+        do{
             number = number/10;
             count++;
-        }
+        }while(number > 0);
         return count;
     }
 }
