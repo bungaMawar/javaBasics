@@ -23,4 +23,7 @@ public class Main {
             count++;
         }while(count != 6);
     }
+    public static boolean isEvenNumber(int number){
+        return number % 2 == 0;
+    }
 }
