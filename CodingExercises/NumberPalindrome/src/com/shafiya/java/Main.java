@@ -8,8 +8,10 @@ public class Main {
 //
         System.out.println("Is 1221 a palindrome: " + isPalindrome(1221));
         System.out.println("Is 3434 a palindrome: " + isPalindrome(3434));
+        System.out.println("Is -123321 a palindrome: " + isPalindrome(-123321));
     }
     public static boolean isPalindrome(int number){
+        number = Math.abs(number);
         int tempNum = number;
         int reverseNumber = 0;
         while(tempNum > 0){
