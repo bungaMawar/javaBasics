@@ -17,6 +17,8 @@ public class Main {
 //
 //* When the column number equals rowCount - currentRow + 1 (where currentRow is current row number)
         printSquareStar(5);
+        System.out.println("--------");
+        printSquareStar(8);
 
     }
 
@@ -24,14 +26,18 @@ public class Main {
         if(number < 5){
             System.out.println("Invalid Value");
         }
-        for(int row = 0; row < 5; row++){
-            for(int col = 0; col < 5;  col++){
-                if(row == 0 || row == 4){
+        for(int row = 0; row < number; row++){
+            for(int col = 0; col < number;  col++){
+                if(row == 0 || row == number - 1){
                     System.out.print("*");
                 }
-                else if(col == 0 || col == 4){
+                else if(col == 0 || col == number - 1){
                     System.out.print("*");
                 }
+                else if(col == row){
+                    System.out.print("*");
+                }
+
                 else{
                     System.out.print(" ");
                 }
