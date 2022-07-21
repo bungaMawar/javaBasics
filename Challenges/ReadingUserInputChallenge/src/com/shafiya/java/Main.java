@@ -17,17 +17,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int count = 1;
         int sum = 0;
+        int input = 0;
         while(count <= 10){
             System.out.print("Enter number #" + count + ": ");
-            int input = 0;
             count++;
-            input = scanner.nextInt();
             if(scanner.hasNextInt()){
+                input = scanner.nextInt();
                 sum += input;
             }
             else{
                 System.out.println("Invalid Value.");
             }
+            scanner.nextLine();
         }
         scanner.close();
         System.out.println("Sum of numbers = " + sum);
