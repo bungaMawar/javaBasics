@@ -26,25 +26,27 @@ public class Main {
         if(number < 5){
             System.out.println("Invalid Value");
         }
-        for(int row = 0; row < number; row++){
-            for(int col = 0; col < number;  col++){
-                if(row == 0 || row == number - 1){
-                    System.out.print("*");
+        else{
+            for(int row = 0; row < number; row++){
+                for(int col = 0; col < number;  col++){
+                    if(row == 0 || row == number - 1){
+                        System.out.print("*");
+                    }
+                    else if(col == 0 || col == number - 1){
+                        System.out.print("*");
+                    }
+                    else if(col == row){
+                        System.out.print("*");
+                    }
+                    else if(col == number - (row + 1)){
+                        System.out.print("*");
+                    }
+                    else{
+                        System.out.print(" ");
+                    }
                 }
-                else if(col == 0 || col == number - 1){
-                    System.out.print("*");
-                }
-                else if(col == row){
-                    System.out.print("*");
-                }
-                else if(col == number - (row + 1)){
-                    System.out.print("*");
-                }
-                else{
-                    System.out.print(" ");
-                }
+                System.out.println();
             }
-            System.out.println();
         }
     }
 }
