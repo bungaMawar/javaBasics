@@ -37,7 +37,9 @@ public class Main {
                 else if(col == row){
                     System.out.print("*");
                 }
-
+                else if(col == number - (row + 1)){
+                    System.out.print("*");
+                }
                 else{
                     System.out.print(" ");
                 }
