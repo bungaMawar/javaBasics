@@ -20,10 +20,10 @@ public class Main {
         int input = 0;
         while(count <= 10){
             System.out.print("Enter number #" + count + ": ");
-            count++;
             if(scanner.hasNextInt()){
                 input = scanner.nextInt();
                 sum += input;
+                count++;
             }
             else{
                 System.out.println("Invalid Value.");
