@@ -16,8 +16,8 @@ public class Main {
 //        -Create a project with the name MinAndMaxInputChallenge.
 
         Scanner scanner = new Scanner(System.in);
-        int min = 0;
-        int max = 0;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
         while(true){
             System.out.print("Enter Number: ");
             if(scanner.hasNextInt()){
