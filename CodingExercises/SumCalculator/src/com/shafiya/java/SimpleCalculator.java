@@ -22,7 +22,7 @@ public class SimpleCalculator {
         return firstNumber + secondNumber;
     }
     public double getSubtractionResult(){
-        return secondNumber - firstNumber;
+        return firstNumber - secondNumber;
     }
     public double getMultiplicationResult(){
         return firstNumber * secondNumber;
