@@ -30,5 +30,12 @@ public class Main {
         System.out.println("Email: " + newAccount.getEmail());
         System.out.println("Name: " + newAccount.getName());
         System.out.println("Phone Number: " + newAccount.getPhoneNumber());
+
+        BankAccount fiyaAccount = new BankAccount("Fiya", "fiya@gmail.com", "1234567890");
+        System.out.println("Account Number: " + fiyaAccount.getAccountNumber());
+        System.out.println("Balance: " + fiyaAccount.getBalance());
+        System.out.println("Email: " + fiyaAccount.getEmail());
+        System.out.println("Name: " + fiyaAccount.getName());
+        System.out.println("Phone Number: " + fiyaAccount.getPhoneNumber());
     }
 }

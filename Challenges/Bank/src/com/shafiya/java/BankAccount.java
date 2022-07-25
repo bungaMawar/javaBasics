@@ -10,6 +10,11 @@ public class BankAccount {
     public BankAccount(){
         this(12345, 100, "Default Name", "Default Email", "Default PPhone");
     }
+
+    public BankAccount(String name, String email, String phoneNumber) {
+        this(12345, 100, name, email, phoneNumber);
+    }
+
     public BankAccount(int accountNumber, double balance, String name, String email, String phoneNumber){
         this.accountNumber = accountNumber;
         this.balance = balance;
@@ -17,7 +22,6 @@ public class BankAccount {
         this.email = email;
         this.phoneNumber = phoneNumber;
     }
-
     public void setAccountNumber(int accountNumber){
         this.accountNumber = accountNumber;
     }
