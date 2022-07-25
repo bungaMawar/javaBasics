@@ -12,12 +12,7 @@ public class Main {
         // You will want to create various code in the Main class (the one created by IntelliJ) to
         // confirm your code is working.
         // Add some System.out.println's in the two methods above as well.
-        BankAccount bankAccount = new BankAccount();
-        bankAccount.setAccountNumber(12345678);
-        bankAccount.setBalance(100);
-        bankAccount.setEmail("fiya@gmail.com");
-        bankAccount.setName("Fiya");
-        bankAccount.setPhoneNumber(323940123);
+        BankAccount bankAccount = new BankAccount(134235, 500, "Shafiya", "fiya@gmail.com", "234-039-2123");
 
         System.out.println("Account Number: " + bankAccount.getAccountNumber());
         System.out.println("Balance: " + bankAccount.getBalance());
@@ -28,5 +23,12 @@ public class Main {
         bankAccount.withdraw(50);
         bankAccount.withdraw(100);
         bankAccount.deposit(1000);
+
+        BankAccount newAccount = new BankAccount();
+        System.out.println("Account Number: " + newAccount.getAccountNumber());
+        System.out.println("Balance: " + newAccount.getBalance());
+        System.out.println("Email: " + newAccount.getEmail());
+        System.out.println("Name: " + newAccount.getName());
+        System.out.println("Phone Number: " + newAccount.getPhoneNumber());
     }
 }
