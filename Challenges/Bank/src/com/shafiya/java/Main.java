@@ -37,5 +37,30 @@ public class Main {
         System.out.println("Email: " + fiyaAccount.getEmail());
         System.out.println("Name: " + fiyaAccount.getName());
         System.out.println("Phone Number: " + fiyaAccount.getPhoneNumber());
+
+        // Create a new class VipCustomer
+        // it should have 3 fields name, credit limit, and email address.
+        // create 3 constructors
+        // 1st constructor empty should call the constructor with 3 parameters with default values
+        // 2nd constructor should pass on the 2 values it receives and add a default value for the 3rd
+        // 3rd constructor should save all fields.
+        // create getters only for this using code generation of intellij as setters wont be needed
+        // test and confirm it works.
+
+        VIPCustomer defaultCustomer = new VIPCustomer();
+        VIPCustomer namedCustoemer = new VIPCustomer("John", "john@email.com");
+        VIPCustomer customer = new VIPCustomer("Emma", "emma@email.com", 50000);
+        System.out.println("Name: " + defaultCustomer.getName());
+        System.out.println("Email: " + defaultCustomer.getEmail());
+        System.out.println("Credit Limit: $" + defaultCustomer.getCreditLimit());
+        System.out.println("=========");
+        System.out.println("Name: " + namedCustoemer.getName());
+        System.out.println("Email: " + namedCustoemer.getEmail());
+        System.out.println("Credit Limit: $" + namedCustoemer.getCreditLimit());
+        System.out.println("=========");
+        System.out.println("Name: " + customer.getName());
+        System.out.println("Email: " + customer.getEmail());
+        System.out.println("Credit Limit: $" + customer.getCreditLimit());
+
     }
 }
