@@ -7,9 +7,9 @@ public class Main {
      // You will want to decide where to put the appropriate state and behaviours (fields and methods).
      // As mentioned above, changing gears, increasing/decreasing speed should be included.
      // For you specific type of vehicle you will want to add something specific for that type of car.
-
-        Car car = new Car(10, false, 200, false, "Honda", "Civic");
-        car.accelerating(10);
-        car.decelerating(10);
+        Outlander outlander = new Outlander(36);
+        outlander.accelerate(30);
+        outlander.steer(45);
+        outlander.accelerate(20);
     }
 }

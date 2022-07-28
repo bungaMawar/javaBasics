@@ -1,72 +1,48 @@
 package com.shafiya.java;
 
-import java.sql.SQLOutput;
-
 public class Vehicle {
     private String name;
-    private int size;
-    private boolean isManual;
-    private int maxSpeed;
-    private int currentSpeed;
-    private String steering;
-    private int wheels;
+    private String size;
 
-    public Vehicle(String name, int size, boolean isManual, int maxSpeed, String steering, int wheels) {
+    private int currentVelocity;
+    private int currentDirection;
+
+    public Vehicle(String name, String size){
         this.name = name;
-        if(size < 0) {
-            this.size = 0;
-        }
-        else{
-            this.size = size;
-        }
-        this.isManual = isManual;
-        if(maxSpeed < 0) {
-            this.maxSpeed = 0;
-        }
-        else{
-            this.maxSpeed = maxSpeed;
-        }
-        this.steering = steering;
-        if(wheels < 0){
-            this.wheels = 0;
-        }
-        else{
-            this.wheels = wheels;
-        }
-        this.currentSpeed = 0;
+        this.size = size;
+
+        this.currentVelocity = 0;
+        this.currentDirection = 0;
     }
 
-    public void decelerating(int speed){
-        this.currentSpeed -= speed;
-        System.out.println("Vehicle is decelerating by " + speed);
+    public void steer(int direction){
+        this.currentDirection += direction;
+        System.out.println("Vehicle is steering at " + currentDirection + " degrees.");
     }
-    public void accelerating(int speed){
-        this.currentSpeed += speed;
-        System.out.println("Vehicle is accelerating by " + speed);
+    public void move(int velocity, int direction){
+        currentDirection = direction;
+        currentVelocity = velocity;
+        System.out.println("Vehicle is moving at " + currentVelocity + " in direction " + currentDirection);
     }
 
     public String getName() {
         return name;
     }
 
-    public int getSize() {
+    public String getSize() {
         return size;
     }
 
-    public boolean isManual() {
-        return isManual;
+    public int getCurrentVelocity() {
+        return currentVelocity;
     }
 
-    public int getMaxSpeed() {
-        return maxSpeed;
+    public int getCurrentDirection() {
+        return currentDirection;
     }
 
-    public String getSteering() {
-        return steering;
+    public void stop(){
+        this.currentVelocity = 0;
+        System.out.println("Vehicle stopped");
     }
-
-    public int getCurrentSpeed(){
-        return currentSpeed;
-    }
-
 }

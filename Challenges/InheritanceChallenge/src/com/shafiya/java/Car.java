@@ -1,35 +1,28 @@
 package com.shafiya.java;
-
 public class Car extends Vehicle{
-    private boolean isConvertible;
-    private String brand;
-    private String model;
+    private int wheels;
+    private int doors;
+    private int gears;
+    private boolean isManual;
 
-    public Car(int size, boolean isManual, int maxSpeed, boolean isConvertible, String brand, String model) {
-        super("Car", size, isManual, maxSpeed, "Wheel", 4);
-        this.brand = brand;
-        this.model = model;
+    private int currentGear;
+
+    public Car(String name, String size, int wheels, int doors, int gears, boolean isManual) {
+        super(name, size);
+        this.wheels = wheels;
+        this.doors = doors;
+        this.gears = gears;
+        this.isManual = isManual;
+        this.currentGear = 1;
     }
 
-    public boolean isConvertible() {
-        return isConvertible;
+    public void changeGear(int currentGear) {
+        this.currentGear = currentGear;
+        System.out.println("Current gear changed to " + this.currentGear);
     }
 
-    public String getBrand() {
-        return brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    @Override
-    public void decelerating(int speed) {
-        System.out.println(brand + " " + model + " is decelerating by " + speed);
-    }
-
-    @Override
-    public void accelerating(int speed) {
-        System.out.println(brand + " " + model + " is decelerating by " + speed);
+    public void changeVelocity(int speed, int direction){
+        System.out.println("Changed car velocity by " + speed + " direction " + direction);
+        move(speed, direction);
     }
 }
