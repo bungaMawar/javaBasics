@@ -13,10 +13,12 @@ public class Main {
         Printer secondPrinter = new Printer(10, 50, true);
 
         printer.print();
+        System.out.println("Toner is " + printer.getToner() + "% filled.");
         printer.fillToner(100);
 
         secondPrinter.print();
         secondPrinter.fillToner(50);
         secondPrinter.print();
+        System.out.println("Toner is " + secondPrinter.getToner() + "% filled.");
     }
 }
