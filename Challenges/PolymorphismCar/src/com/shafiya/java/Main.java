@@ -21,6 +21,19 @@ public class Main {
             System.out.println("Car #" + i + ": " + car.getName());
             System.out.println(car.startEngine());
         }
+
+        Car car = new Car(5, "Mitsubushi");
+        car.startEngine();
+        car.accelerate(4);
+        car.brake();
+        System.out.println(car.getCurrentVelocity());
+
+        Honda honda = new Honda();
+        honda.startEngine();
+        System.out.println(honda.accelerate(10));
+        System.out.println(honda.getCurrentVelocity());
+        System.out.println(honda.brake());
+
     }
 
     public static Car pickCar(){
@@ -63,7 +76,8 @@ class Car{
 
     public int accelerate(int velocity){
         System.out.println("Car is accelerating by " + velocity);
-        return currentVelocity + velocity;
+        currentVelocity = currentVelocity + velocity;
+        return currentVelocity;
     }
 
     public String brake(){
