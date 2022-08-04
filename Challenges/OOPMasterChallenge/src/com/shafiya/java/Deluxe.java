@@ -17,4 +17,11 @@ public class Deluxe extends Hamburger{
     public String addAdditions(String addition) {
         return "Cannot add any more additions.";
     }
+    public String getTotalPrice() {
+        double additionsPrice = this.additionCount * 0.1;
+        double basePrice = (this.totalPrice - additionsPrice);
+        return "Base Price = $" + String.format("%.2f", basePrice) + "\n"
+                + "Additions price for " + additions + " = $" + String.format("%.2f", additionsPrice) + "\n"
+                + "Total Price = $" + String.format("%.2f", totalPrice);
+    }
 }

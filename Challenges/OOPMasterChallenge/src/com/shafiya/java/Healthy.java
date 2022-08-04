@@ -39,24 +39,20 @@ public class Healthy extends Hamburger{
     public String getAdditions() {
         return additions;
     }
-
     @Override
     public String getMeatType() {
         return meatType;
     }
-
     @Override
     public String getName() {
         return name;
     }
 
-    @Override
-    public int getAdditionCount() {
-        return additionCount;
-    }
-
-    @Override
     public String getTotalPrice() {
-        return super.getTotalPrice();
+        double additionsPrice = this.additionCount * 0.1;
+        double basePrice = (this.totalPrice - additionsPrice);
+        return "Base Price = $" + String.format("%.2f", basePrice) + "\n"
+                + "Additions price for " + getAdditions() + " = $" + String.format("%.2f", additionsPrice) + "\n"
+                + "Total Price = $" + String.format("%.2f", totalPrice);
     }
 }

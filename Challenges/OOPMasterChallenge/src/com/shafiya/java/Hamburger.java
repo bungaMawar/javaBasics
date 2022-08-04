@@ -48,7 +48,7 @@ public class Hamburger {
         double additionsPrice = this.additionCount * 0.1;
         double basePrice = (this.totalPrice - additionsPrice);
         return "Base Price = $" + String.format("%.2f", basePrice) + "\n"
-                + "Additions price for " + getAdditions() + " = $" + String.format("%.2f", additionsPrice) + "\n"
+                + "Additions price for " + this.getAdditions() + " = $" + String.format("%.2f", additionsPrice) + "\n"
                 + "Total Price = $" + String.format("%.2f", totalPrice);
     }
 

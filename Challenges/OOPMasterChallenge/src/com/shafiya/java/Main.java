@@ -32,14 +32,22 @@ public class Main {
 
         Hamburger hamburger = new Hamburger("Regular", "White", "Beef");
 
-        hamburger.addAdditions("Lettuce");
-        hamburger.addAdditions("Cheese");
+        System.out.println(hamburger.addAdditions("Cheese"));
+        System.out.println(hamburger.addAdditions("Lettuce"));
+        System.out.println(hamburger.addAdditions("Tomato"));
+        System.out.println(hamburger.addAdditions("Onion"));
+        System.out.println(hamburger.addAdditions("Pickles"));
         System.out.println(hamburger.getTotalPrice());
 
         Healthy healthy = new Healthy("Beef");
 
-        healthy.addAdditions("Lettuce");
-        healthy.addAdditions("Cheese");
+        System.out.println(healthy.addAdditions("Lettuce"));
+        System.out.println(healthy.addAdditions("Cheese"));
         System.out.println(healthy.getTotalPrice());
+
+        Deluxe deluxe = new Deluxe("Whole Grain", "Chicken");
+
+        System.out.println(deluxe.addAdditions("Lettuce"));
+        System.out.println(deluxe.getTotalPrice());
     }
 }
