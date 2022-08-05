@@ -1,3 +1,6 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Create a program using arrays that sorts a list of integers in descending order.
@@ -11,7 +14,8 @@ public class Main {
         // and sortIntegers should sort the array and return a new array containing the sorted numbers
         // you will have to figure out how to copy the array elements from the passed array into a new
         // array and sort them and return the new sorted array.
-        int[] array = {34, 123, 1244, 131, 2, 53};
+        int[] array = new int[10];
+        getIntegers(array);
         printArray(sortIntegers(array));
     }
 
@@ -38,6 +42,14 @@ public class Main {
     public static void printArray(int[] array){
         for(int x = 0; x < array.length; x++){
             System.out.println("Element #" + x + ": " + array[x]);
+        }
+    }
+
+    public static void getIntegers(int[] array){
+        Scanner scanner = new Scanner(System.in);
+        for(int x = 0; x < array.length; x++){
+            System.out.println("Enter element number " + x + ": ");
+            array[x] = scanner.nextInt();
         }
     }
 }
