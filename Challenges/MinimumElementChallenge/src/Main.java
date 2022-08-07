@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 //        -Write a method called readIntegers() with a parameter called count that represents how many integers the user needs to enter.
 //
@@ -13,11 +14,12 @@ public class Main {
 //        -Then call the findMin() method passing the array returned from the call to the readIntegers() method.
 //
 //                -Finally, print the minimum element in the array.
-//
-        System.out.println(findMin(readIntegers(5)));
+
+        System.out.print("Enter count: ");
+        int count = scanner.nextInt();
+        System.out.println(findMin(readIntegers(count)));
     }
     private static int[] readIntegers(int count){
-        Scanner scanner = new Scanner(System.in);
 
         int[] array = new int[count];
 
