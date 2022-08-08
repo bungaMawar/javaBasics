@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 //        -Write a method called reverse() with an int array as a parameter.
@@ -8,9 +10,7 @@ public class Main {
 //
         int[] intArray = {1, 2, 3, 4, 5};
         reverse(intArray);
-        for(int x = 0; x < intArray.length; x++){
-            System.out.println(intArray[x]);
-        }
+        System.out.println("Reversed array: " + Arrays.toString(intArray));
     }
     private static void reverse(int[] array){
         int[] tempArray = new int[array.length];
