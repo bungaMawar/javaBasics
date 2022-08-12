@@ -20,7 +20,7 @@ public class Branch {
     }
 
     public boolean addCustomer(String customerName, double initialAmount){
-        if(searchCustomer(name) == null){
+        if(searchCustomer(customerName) == null){
             this.customerList.add(new Customer(customerName, initialAmount));
             return true;
         }
@@ -35,14 +35,10 @@ public class Branch {
         }
         return false;
     }
-
-    public int searchCustomer(Customer customer){
-        return this.customerList.indexOf(customer);
-    }
     private Customer searchCustomer(String name){
         for (int x = 0; x < this.customerList.size(); x++){
             Customer customer = this.customerList.get(x);
-            if(customer.equals(name)){
+            if(customer.getName().equals(name)){
                 return customer;
             }
         }
