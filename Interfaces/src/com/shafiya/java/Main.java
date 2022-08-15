@@ -7,5 +7,10 @@ public class Main {
         fiyasPhone.powerOn();
         fiyasPhone.callPhone(3942);
         fiyasPhone.answer();
+
+        fiyasPhone = new MobilePhone(3920);
+        fiyasPhone.powerOn();
+        fiyasPhone.callPhone(3920);
+        fiyasPhone.answer();
     }
 }
