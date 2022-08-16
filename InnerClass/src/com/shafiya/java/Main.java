@@ -18,20 +18,25 @@ public class Main {
 //        mcLaren.operateClutch(false);
 //        System.out.println(mcLaren.wheelSpeed(6000));
 
-         class ClickListener implements Button.OnClickListener{
-            public ClickListener(){
-                System.out.println("Listener has been attatched");
-            }
+//         class ClickListener implements Button.OnClickListener{
+//            public ClickListener(){
+//                System.out.println("Listener has been attatched");
+//            }
+//
+//            @Override
+//            public void onClick(String title){
+//                System.out.println(title + " was clicked.");
+//            }
+//        }
 
+        //btnPrint.setOnClickListener(new ClickListener());
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
             @Override
-            public void onClick(String title){
-                System.out.println(title + " was clicked.");
+            public void onClick(String title) {
+                System.out.println(title + " was clicked");
             }
-        }
-
-        btnPrint.setOnClickListener(new ClickListener());
+        });
          listen();
-
     }
 
     private static void listen(){
