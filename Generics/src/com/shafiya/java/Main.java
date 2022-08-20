@@ -20,5 +20,10 @@ public class Main {
 
 //        starTeam.matchResult(greenTeam, 12, 16);
 //        starTeam.matchResult(nonTeam, 12, 0);
+
+        System.out.println("Rankings");
+        System.out.println(starTeam.getName() + ": " + starTeam.ranking());
+        System.out.println(greenTeam.getName() + ": " + greenTeam.ranking());
+
     }
 }
