@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         FootballPlayer wel = new FootballPlayer("Wel");
         BaseballPlayer jev = new BaseballPlayer("Jev");
-        SoccerPlayer imp = new SoccerPlayer("Imp");
+        SoccerPlayer cleo = new SoccerPlayer("Cleo");
 
         Team<FootballPlayer> starTeam = new Team<>("Star");
         starTeam.addPlayer(wel);
@@ -14,6 +14,11 @@ public class Main {
 
         Team<BaseballPlayer> greenTeam = new Team<>("Green");
         greenTeam.addPlayer(jev);
-        
+
+        Team<SoccerPlayer> nonTeam = new Team<>("Non");
+        nonTeam.addPlayer(cleo);
+
+//        starTeam.matchResult(greenTeam, 12, 16);
+//        starTeam.matchResult(nonTeam, 12, 0);
     }
 }
