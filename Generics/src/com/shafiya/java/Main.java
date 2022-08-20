@@ -1,24 +1,19 @@
 package com.shafiya.java;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> items = new ArrayList<>();
-        items.add(1);
-        items.add(2);
-        items.add(3);
-//        items.add("fiya");
-        items.add(4);
-        items.add(5);
-        items.add(6);
+        FootballPlayer wel = new FootballPlayer("Wel");
+        BaseballPlayer jev = new BaseballPlayer("Jev");
+        SoccerPlayer imp = new SoccerPlayer("Imp");
 
-        printDoubled(items);
-    }
+        Team<FootballPlayer> starTeam = new Team<>("Star");
+        starTeam.addPlayer(wel);
+//        starTeam.addPlayer(doc);
+//        starTeam.addPlayer(imp);
+        System.out.println(starTeam.numPlayers());
 
-    private static void printDoubled(ArrayList<Integer> n){
-        for(int i : n){
-            System.out.println(i * 2);
-        }
+        Team<BaseballPlayer> greenTeam = new Team<>("Green");
+        greenTeam.addPlayer(jev);
+        
     }
 }
